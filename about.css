@@ -3,10 +3,6 @@
   border-radius: 25%;
 }
 
-body{
-  padding: 0 0 5%;
-}
-
 #title {
   background-image: linear-gradient(to bottom, rgba(1, 1, 1, 0), rgba(35, 39, 61, 1) 90%), url(stock.jpg);
   background-attachment: scroll;
