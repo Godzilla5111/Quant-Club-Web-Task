@@ -2,6 +2,10 @@ function myFunction() {
   alert("We don't have this page yet! :)");
 }
 
+function call() {
+  alert('To get the contact number of our admin, kindly visit our facebook page :)');
+}
+
 
 let modalId = $('#image-gallery');
 
