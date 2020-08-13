@@ -10,7 +10,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
   <link rel="stylesheet" href="about.css">
-  <link rel="icon" href="favicon.png">
+  <script src="https://kit.fontawesome.com/e8922b1773.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="icon" type="image/png" href="quant.png">
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,12 +24,12 @@
 <body>
 
   <div class="icon-bar">
-    <a href="https://www.facebook.com/quantclubiitkgp/" class="facebook"><i class="fa fa-facebook"></i></a>
-    <a href="#" class="twitter" onclick="myFunction()"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.facebook.com/quantclubiitkgp/" class="facebook  hvr-grow"><i class="fa fa-facebook hvr-grow"></i></a>
+    <a href="#" class="twitter hvr-grow" onclick="myFunction()"><i class="fa fa-twitter hvr-grow"></i></a>
     <a href="https://www.google.com/search?sxsrf=ALeKk00oR8a1P5IH-IzFdlk-G8XZpVnekg%3A1597245813922&source=hp&ei=dQk0X_7FNpaf4-EPqoS7iAk&q=quant+club+iit+kharagpur&oq=quant+club+iit+kharagpur&gs_lcp=CgZwc3ktYWIQAzIICCEQFhAdEB4yCAghEBYQHRAeMggIIRAWEB0QHjIICCEQFhAdEB4yCAghEBYQHRAeMggIIRAWEB0QHjoECCMQJzoFCAAQkQI6BQgAELEDOggIABCxAxCDAToICC4QxwEQowI6CwguELEDEMcBEKMCOgUILhCxAzoICAAQsQMQkQI6DgguELEDEIMBEMcBEK8BOgIIADoCCC46BAgAEAo6BggAEBYQHjoFCCEQoAFQrwdYwT1ggD5oAHAAeACAAesBiAHCIZIBBjAuMTYuN5gBAKABAaoBB2d3cy13aXo&sclient=psy-ab&ved=0ahUKEwi-1Oyq_JXrAhWWzzgGHSrCDpEQ4dUDCAc&uact=5"
-      class="google"><i class="fa fa-google"></i></a>
-    <a href="https://www.linkedin.com/company/quant-club-iit-kharagpur/" class="linkedin"><i class="fa fa-linkedin"></i></a>
-    <a href="#" class="youtube"><i class="fa fa-youtube" onclick="myFunction()"></i></a>
+      class="google hvr-grow"><i class="fa fa-google hvr-grow"></i></a>
+    <a href="https://www.linkedin.com/company/quant-club-iit-kharagpur/" class="linkedin hvr-grow"><i class="fa fa-linkedin hvr-grow"></i></a>
+    <a href="#" class="youtube hvr-grow" onclick="myFunction()"><i class="fa fa-youtube hvr-grow"></i></a>
   </div>
 
   <section id='title'>
@@ -39,7 +42,7 @@
       <nav class="navbar navbar-expand-lg navbar-dark " style="padding-bottom: 4.5rem;  padding-left: 0;
         padding-right: 0;">
 
-        <a href="index.html" class="navbar-brand" style="Font-size:2.5rem;"> <img src="quant.png" alt="" id='logo'></a>
+        <a href="index.html" class="navbar-brand hvr-grow" style="Font-size:2.5rem;"> <img src="quant.png" alt="" id='logo'></a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="#navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -57,41 +60,50 @@
               </li>
             </ul>
           </div>
-          <button type="button" name="button" class="btn btn-lg btn-light" style='border-radius:25px;' id='call'>call</button>
+          <button type="button" name="button" onclick="call()" class="btn btn-lg btn-light" style='border-radius:25px;' id='call'><i class="fas fa-phone-alt hvr-grow "></i></button>
 
         </div>
       </nav>
-      <center>
-        <div class="">
-          <h1 class='whiteText' id='heading'>About Us</h1>
-        </div>
+
+    </div>
+    <center>
+      <div class="">
+        <h1 class='whiteText hvr-wobble-vertical' id='heading'>About Us</h1>
+      </div>
 
 
-        <h3 class='whiteText'>Greetings from Quant Club, IIT Kharagpur</h3>
+      <h3 class='whiteText hvr-grow' id='hide' style='padding-left: 1%;'>Greetings from Quant Club, <br>IIT Kharagpur</h3>
 
-        <h4 class='whiteText' id='aboutText'>We are a student body that aims at increasing the awareness of Quantitative Finance as a viable career option amongst the student community at IIT Kharagpur. <br><br>
+      <h4 class='whiteText' id='aboutText'>We are a student body that aims at increasing the awareness of Quantitative Finance as a viable career option amongst the student community at IIT Kharagpur. <br><br>
 
-          Investopedia describes Quants as the Rocket Scientists of Wall Street. The nature of work Quants do, require a unique blend of mathematics, finance and computer skills. <br><br><br> Apart from fostering a permanent Quantitative Finance
-          culture in IIT
-          Kharagpur, we also design and implement our own proprietary models that may be used by financial firms to price and trade securities. <br><br /> Our motivation in doing so is the immense learning that comes with designing and implementing
-          such a
-          trading system, and the fact that being able to do so will help the members of Quant Club develop industry relevant skills and become top notch Quants in the longer run.
-          <br><br>
-          In the future, we will be sharing informative posts revolving around the world of stock markets, economy and trading along with any news/updates by the Club.
-          <br><br><br>
+        Investopedia describes Quants as the Rocket Scientists of Wall Street. The nature of work Quants do, require a unique blend of mathematics, finance and computer skills. <br><br><br> Apart from fostering a permanent Quantitative Finance
+        culture in IIT
+        Kharagpur, we also design and implement our own proprietary models that may be used by financial firms to price and trade securities. <br><br /> Our motivation in doing so is the immense learning that comes with designing and implementing
+        such a
+        trading system, and the fact that being able to do so will help the members of Quant Club develop industry relevant skills and become top notch Quants in the longer run.
+        <br><br>
+        In the future, we will be sharing informative posts revolving around the world of stock markets, economy and trading along with any news/updates by the Club.
+        <br><br><br>
+        <div class="hvr-shrink">
           Thanks and Regards,<br>
-          Quant Club, IIT Kharagpur</h4>
+          Quant Club, IIT Kharagpur
+      </h4>
+      </div>
 
-        <footer class="whiteText">
-          Copyright © <span>
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-          </span>
-        </footer>
-      </center>
+      <footer class="whiteText hvr-shrink">
+        Copyright © <span>
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </span>
+      </footer>
+    </center>
     </div>
   </section>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="index.js" charset="utf-8"></script>
 </body>
 
